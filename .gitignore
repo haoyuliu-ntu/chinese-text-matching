@@ -1,0 +1,54 @@
+# === Secrets ===
+.env
+.env.local
+.env.*.local
+
+# === API keys / credentials ===
+*.key
+*.pem
+*credentials*
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+.venv/
+venv/
+env/
+build/
+dist/
+*.egg-info/
+*.egg
+
+# === Model weights / large binaries ===
+models/
+*.bin
+*.safetensors
+*.pt
+*.pth
+*.onnx
+
+# === FAISS index (binary, regenerable) ===
+vectorstore/*.bin
+
+# === Data (may have license restrictions, regenerable) ===
+data/raw_pdf/
+data/parsed/
+data/chunks/
+
+# === Outputs (regenerable) ===
+# Keep outputs/ for evidence (charts, logs, results)
+# But exclude large/regenerable items
+outputs/sft_adapter/
+
+# === IDE / OS ===
+.vscode/
+.idea/
+*.swp
+.DS_Store
+Thumbs.db
+
+# === Jupyter ===
+.ipynb_checkpoints/
